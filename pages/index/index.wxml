@@ -1,7 +1,10 @@
 <!-- index.wxml -->
-<view class="wrapper" style="padding-top: {{paddingTop}}px">
+<view class="wrapper">
   <nav />
-  <view class="collection-picker">
-    123
+  <view class="collection-picker" style="margin-top: {{paddingTop}}px">
+    <view wx:for="{{goodMen}}" wx:key="timeStamp" wx:for-item="item">
+      <image src="{{item.image_url}}" style="width:80px;" />
+      <text class="log-item">{{index + 1}}. {{}}</text>
+    </view>
   </view>
 </view>
