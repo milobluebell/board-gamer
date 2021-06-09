@@ -1,0 +1,27 @@
+/* components/headerNav/headerNav.wxss */
+.headerNav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  width: 100%;
+}
+
+.headerNav-btnGroup {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.nav-btn {
+  padding: 0 6rpx;
+  margin-right: 32rpx;
+}
+.nav-btn-text {
+  color: white;
+  font-size: 30rpx;
+  margin-left: 6rpx;
+}

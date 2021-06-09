@@ -1,0 +1,11 @@
+<!-- components/headerNav/headerNav.wxml -->
+<view class="headerNav-wrapper" style="height: {{navigatorBarHeight}}px;padding-top: {{statusBarHeight}}px">
+  <view class="headerNav-btnGroup">
+    <block wx:for="{{btnGroup}}" wx:key="{{index}}">
+      <button catchtap="{{item.clickEvent}}" class="nav-btn" hover-class="btn-hover">
+        <i class="iconfont icon-{{item.iconName}}"></i>
+        <text class="nav-btn-text">{{item.ch_text}}</text>
+      </button>
+    </block>
+  </view>
+</view>

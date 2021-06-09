@@ -1,0 +1,86 @@
+/**app.wxss**/
+page {
+  background-color: black;
+  border-radius: 18rpx;
+  height: 100%;
+}
+.wrapper {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#252525, #000000);
+  border-radius: 18rpx;
+}
+
+/* reset */
+/* button */
+button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+}
+button::after {
+  border: none;
+  background: none;
+}
+.btn-hover {
+  background-color: #333;
+}
+
+/* main theme */
+.primary-bg {
+  background: linear-gradient(to right, #c2a64c 50%, #eed37b 100%);
+}
+.primary {
+  color: #d6ba5d;
+}
+
+.muted-bg {
+  background-color: #bbb;
+}
+.muted {
+  color: #bbb;
+}
+
+.green {
+  color: white;
+  background-color: #5b8847;
+  border-color: #4a7438;
+}
+
+.red {
+  color: white;
+  background-color: #cf1212;
+  border-color: #a30b0b;
+}
+
+.black {
+  color: white;
+  background-color: #4b4b4b;
+  border-color: #555;
+}
+
+.blue {
+  color: white;
+  background-color: #1675d3;
+  border-color: #175fa7;
+}
+
+.is_green {
+  background: linear-gradient(to right, #506c3a 00%, #7b9b62 100%);
+}
+.is_blue {
+  background: linear-gradient(to right, #215a7b 00%, #2b6f92 100%);
+}
+.is_black {
+  background: linear-gradient(to right, #282226 00%, #474747 100%);
+}
+.is_red {
+  background: linear-gradient(to right, #85272d 00%, #af4f5a 100%);
+}

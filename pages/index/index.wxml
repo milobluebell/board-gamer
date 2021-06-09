@@ -1,0 +1,7 @@
+<!-- index.wxml -->
+<view class="wrapper" style="padding-top: {{paddingTop}}px">
+  <nav />
+  <view class="collection-picker">
+    123
+  </view>
+</view>
