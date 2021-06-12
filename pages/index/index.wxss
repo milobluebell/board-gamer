@@ -1,10 +1,9 @@
 /**index.wxss**/
 
 .container .role-picker {
-  height: 84%;
   width: 100%;
   position: absolute;
-  top: 5%;
+  top: 7%;
   overflow-y: hidden;
   white-space: nowrap;
 }
@@ -12,14 +11,14 @@
 .container .role-picker .card {
   position: relative;
   height: 100%;
-  /* margin-right: -30rpx; */
+  margin-right: -30rpx;
   display: inline-flex;
   justify-items: center;
   align-items: flex-start;
 }
 
 .container .role-picker .card > .role-avatar {
-  height: 346rpx;
+  height: 296rpx;
   z-index: 11;
   position: relative;
 }
@@ -41,7 +40,6 @@
   width: 132rpx;
   border-radius: 8rpx;
   text-align: center;
-  border: #e2d55a 1rpx solid;
 }
 
 .container .role-picker .card > .role-label-wrapper .exact-label-container .role-label-img {
@@ -77,6 +75,7 @@
   z-index: 1;
   transform: rotate(45deg);
   border-radius: 5rpx;
+  border: #e2d55a 1rpx solid;
 }
 
 .collection-displayer li.good::before {
@@ -92,7 +91,7 @@
   color: #aa1627;
   font-size: 12rpx;
   font-weight: bolder;
-  line-height: 8rpx;
+  line-height: 10rpx;
   text-align: center;
   position: absolute;
   width: 10rpx;
@@ -127,23 +126,56 @@
   z-index: 10;
   right: 0;
   bottom: 0;
-  border: solid 2rpx #688d4d;
-  border-bottom: 0;
-  border-right: 0;
+  border-bottom: none;
+  border-right: none;
   box-sizing: border-box;
   border-radius: 0;
-  border-top-left-radius: 8rpx;
+  border-top-left-radius: 12rpx;
   font-weight: 600;
-  color: white;
+  text-shadow: 0rpx 0rpx 1rpx #012c00;
+  /* color: white; */
 }
 
 /* tribe-picker */
 .container .tribe-picker {
-  background-color: gray;
   position: fixed;
   left: 0;
-  top: 0;
-  width: 52rpx;
-  height: 100%;
+  bottom: 0;
   z-index: 13;
+  border-radius: 12rpx;    
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.container .tribe-picker .tribe-picker-item {
+  display: inline-block;
+  font-size: 15rpx;
+  font-weight: 600;
+  padding: 8rpx 24rpx;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+
+.container .tribe-picker .tribe-picker-item.active {
+  padding: 12rpx 24rpx;
+  border-top-left-radius: 12rpx;
+  border-top-right-radius: 12rpx;
+}
+
+.tribe-picker-item:first-child {
+  color: black;
+  text-shadow: 0rpx 0rpx 1rpx black;
+}
+.tribe-picker-item:nth-child(2) {
+  color: #500005;
+  text-shadow: 0rpx 0rpx 1rpx #4d0005;
+}
+
+.container .tribe-picker .tribe-picker-item:last-child {
+  border-top-right-radius: 8rpx;
+  border-right-width: 1rpx;
+  text-shadow: 0rpx 0rpx 1rpx #503d00;
+  color: #3f3000;
 }

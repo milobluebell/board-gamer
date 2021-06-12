@@ -3,11 +3,11 @@
   <nav />
   <view class="container" style="height: {{windowHeight}}px">
     <!-- 阵营选择 -->
-    <!-- <ul class="tribe-picker">
-      <li>好人</li>
-      <li>第三方</li>
-      <li>狼人</li>
-    </ul> -->
+    <view class="tribe-picker">
+      <view class="is_black tribe-picker-item stroke">？</view>
+      <view class="is_red tribe-picker-item stroke">狼人</view>
+      <view class="primary-bg tribe-picker-item stroke active">好人</view>
+    </view>
     <!-- 角色选择 -->
     <scroll-view scroll-x="true" class="role-picker clear-both">
       <view class="card" wx:for="{{goodMen}}" wx:key="cn_name" wx:for-item="role">
@@ -26,6 +26,6 @@
       </li>
     </ul>
     <!-- 确认区域 -->
-    <button class="start-btn is_green right-icon">开局</button>
+    <button  class="start-btn primary-bg right-icon stroke disabled">开局</button>
   </view>
 </view>
