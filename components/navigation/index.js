@@ -23,11 +23,11 @@ Component({
 	 */
 	methods: {
 		// 返回上一页
-		navigateBack: function (){
+		navigateBack: function () {
 			this.triggerEvent('navigateBack');
 		},
 		// 清空牌组
-		clearDecks: function (){
+		clearDecks: function () {
 			this.triggerEvent('clearDecks');
 		},
 	},
@@ -35,19 +35,7 @@ Component({
 	/**
 	 * 
 	 */
-	attached: function (){
-		console.log(getApp().globalData);
-		this.setData({
-			navigatorBarHeight: getApp().globalData.navigatorBarHeight,
-			statusBarHeight: getApp().globalData.statusBarHeight,
-			btnGroup: getApp().globalData.headerNavBtnGroup
-		});
-	},
-
-	/**
-	 * 
-	 */
-	ready: function(){
+	ready: function () {
 
 	},
 
@@ -55,7 +43,7 @@ Component({
 	 * 
 	 */
 	pageLifetimes: {
-		
+
 	}
 
 

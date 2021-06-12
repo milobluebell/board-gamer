@@ -1,22 +1,52 @@
 /**app.wxss**/
+/* app容器 */
 page {
   background-color: black;
   border-radius: 18rpx;
   height: 100%;
-}
-.wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  padding: 0;
-  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 110vw 110vh;
+}
+
+.wrapper::after {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#1e1e1e 45%, #000000 80%);
-  /* overflow: hidden; */
+  content: "";
+  background: linear-gradient(to top, #141414 5%, #000000 75%);
+  opacity: 0.91;
 }
-.container{
-  z-index: 1000;
+
+.wrapper > .container {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 1001;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.clear-both::after {
+  content: "";
+  clear: both;
+  width: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
 }
 
 /* reset */
@@ -41,7 +71,7 @@ button::after {
 
 /* main theme */
 .primary-bg {
-  background: linear-gradient(to right, #c2a64c 50%, #eed37b 100%);
+  background: linear-gradient(to right, #b89d47 50%, #eed37b 100%);
 }
 .primary {
   color: #d6ba5d;
@@ -79,7 +109,7 @@ button::after {
 }
 
 .is_green {
-  background: linear-gradient(to right, #506c3a 00%, #7b9b62 100%);
+  background: linear-gradient(to left, #7b9b62 00%, #506c3a 100%);
 }
 .is_blue {
   background: linear-gradient(to right, #215a7b 00%, #2b6f92 100%);
@@ -89,4 +119,14 @@ button::after {
 }
 .is_red {
   background: linear-gradient(to right, #85272d 00%, #af4f5a 100%);
+}
+
+.right-icon::after {
+  content: "";
+  width: 40rpx;
+  height: 20rpx;
+  transform: rotate(45deg);
+  border: solid 4rpx white;
+  border-top: none;
+  border-right: none;
 }

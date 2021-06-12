@@ -44,7 +44,10 @@ App({
 
       // 是否已经登陆
       isLogin: false,
+
     }
 
+    //
+    wx.setKeepScreenOn({ keepScreenOn: true })
   }
 })

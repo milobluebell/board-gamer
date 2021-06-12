@@ -31,6 +31,11 @@ function calcResult($goodMen, $badMen, $opt = {}) {
 
 }
 
+//
+function checkTribeLabelAlias (code) {
+
+}
+
 module.exports = {
   checkCardCountValid,
   checkCollectionValid,

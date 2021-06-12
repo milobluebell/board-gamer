@@ -1,88 +1,149 @@
 /**index.wxss**/
-.wrapper {
-  min-height: 100vh;
+
+.container .role-picker {
+  height: 84%;
   width: 100%;
-}
-
-.wrapper::before {
-  content: "";
   position: absolute;
+  top: 5%;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.container .role-picker .card {
+  position: relative;
   height: 100%;
-  width: 26%;
-  left: 37%;
-  top: 0%;
-  /* background: linear-gradient(to bottom, #eee7a5 8%, #1e1e1e 52%); */
-  opacity: 0.12;
+  /* margin-right: -30rpx; */
+  display: inline-flex;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.container .role-picker .card > .role-avatar {
+  height: 346rpx;
   z-index: 11;
-}
-
-.container {
   position: relative;
 }
 
-.container .tribe-selector {
-  height: 82%;
-  position: fixed;
-  left: 0;
-  top: 4%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  z-index: 1001;
-}
-
-.container .tribe-selector .select-item {
-  font-size: 26rpx;
-  font-weight: 600;
-  border-top-right-radius: 8rpx;
-  border-bottom-right-radius: 8rpx;
-  padding: 10rpx;
-  display: block;
-  width: 42rpx;
-  text-align: center;
-  word-wrap: break-word;
-  height: 30%;
-  display: flex;
-  align-items: center;
-}
-
-.container .tribe-selector .select-item.active {
-  width: 56rpx;
-}
-
-.collection-picker {
-  width: 82%;
-  /* background: linear-gradient(to bottom, #000000 15%, #1e1e1e 90%); */
-  border-top-right-radius: 32rpx;
-  position: relative;
-  z-index: 1000;
-  margin: 0 auto;
-}
-
-.collection-picker > .card {
-  /* background: linear-gradient(to right, #988134 40%, #d6ba5d 90%); */
-  width: 80%;
-  margin: 0 auto;
-  height: 276rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16rpx;
-  z-index: 9;
-  margin-bottom: 35rpx;
-  position: relative;
-}
-
-.card > .role-avatar {
-  height: 216%;
-}
-
-.card > .role-label-wrapper {
+.container .role-picker .card > .role-label-wrapper {
   position: absolute;
   right: 0;
+  top: 24rpx;
+  width: 100%;
+  height: 36rpx;
+  z-index: 10;
 }
 
-.card > .role-label-wrapper > .role-label {
-  width: 92rpx;
+.container .role-picker .card > .role-label-wrapper .exact-label-container {
+  position: absolute;
+  right: -24rpx;
+  top: 6rpx;
+  height: 100%;
+  width: 132rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  border: #e2d55a 1rpx solid;
+}
+
+.container .role-picker .card > .role-label-wrapper .exact-label-container .role-label-img {
+  width: 80rpx;
+  height: 100%;
+}
+
+.container .collection-displayer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 06rpx;
+}
+
+.collection-displayer li {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.collection-displayer li image {
+  z-index: 2;
+}
+
+.collection-displayer li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  z-index: 1;
+  transform: rotate(45deg);
+  border-radius: 5rpx;
+}
+
+.collection-displayer li.good::before {
+  background: linear-gradient(to right, #c2a64c 50%, #eed37b 100%);
+}
+
+.collection-displayer li.bad::before {
+  background: linear-gradient(to right, #85272d 00%, #af4f5a 100%);
+}
+
+.collection-displayer li:not(.cannot-delete)::after {
+  content: "X";
+  color: #aa1627;
+  font-size: 12rpx;
+  font-weight: bolder;
+  line-height: 8rpx;
+  text-align: center;
+  position: absolute;
+  width: 10rpx;
+  height: 10rpx;
+  left: 50%;
+  bottom: -40%;
+  transform: translate(-50%, 0);
+  z-index: 12;
+  border: solid 1rpx #aa1627;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.collection-displayer li .collection-selected-role-shortname {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.collection-displayer > .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28rpx;
+  height: 28rpx;
+  background: url("https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/blade.png") right bottom no-repeat;
+  background-size: 100%;
+}
+
+/* start-btn */
+.start-btn {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  border: solid 2rpx #688d4d;
+  border-bottom: 0;
+  border-right: 0;
+  box-sizing: border-box;
+  border-radius: 0;
+  border-top-left-radius: 8rpx;
+  font-weight: 600;
+  color: white;
+}
+
+/* tribe-picker */
+.container .tribe-picker {
+  background-color: gray;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 52rpx;
+  height: 100%;
+  z-index: 13;
 }

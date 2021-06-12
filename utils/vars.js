@@ -19,54 +19,72 @@ const goodMen = {
   'nvwu': {
     cn_name: '女巫',
     tribe: tribeAlias.get('good'),
+    short_name: '女',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/nw.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/nw.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/nw.png'
   },
   'baichi': {
     cn_name: '白痴',
     tribe: tribeAlias.get('good'),
+    short_name: '白',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/bc.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/bc.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/bc.png'
   },
   'lieren': {
     cn_name: '猎人',
     tribe: tribeAlias.get('good'),
+    short_name: '猎',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/lr.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/lr.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/lr.png'
   },
   'moshushi': {
     cn_name: '魔术师',
     tribe: tribeAlias.get('good'),
+    short_name: '术',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/mss.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/mss.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/mss.png'
   },
   'pingmin': {
     cn_name: '平民',
     tribe: tribeAlias.get('good'),
+    short_name: '民',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/pm.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/pm.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/pm.png'
   },
   'qishi': {
     cn_name: '骑士',
     tribe: tribeAlias.get('good'),
+    short_name: '骑',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/qs.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/qs.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/qs.png'
   },
   'shemengzhe': {
     cn_name: '摄梦人',
     tribe: tribeAlias.get('good'),
+    short_name: '梦',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/smr.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/smr.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/smr.png'
   },
   'shouwei': {
     cn_name: '守卫',
     tribe: tribeAlias.get('good'),
+    short_name: '守',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/sw.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/sw.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/sw.png'
   },
   'yuyanjia': {
     cn_name: '预言家',
     tribe: tribeAlias.get('good'),
+    short_name: '预',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/yyj.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/yyj.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/yyj.png'
   },
@@ -76,31 +94,42 @@ const goodMen = {
 const badMen = {
   'bailangwang': {
     cn_name: '白狼王',
+    cn_name: '白狼王',
     tribe: tribeAlias.get('bad'),
+    short_name: '白狼王',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/blw.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/blw.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/blw.png'
   },
   'langmeiren': {
     cn_name: '狼美人',
     tribe: tribeAlias.get('bad'),
+    short_name: '狼美',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/lmr.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/lmr.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/lmr.png'
   },
   'langwang': {
     cn_name: '狼王',
     tribe: tribeAlias.get('bad'),
+    short_name: '狼王',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/lw.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/lw.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/lw.png'
   },
   'yinlang': {
     cn_name: '隐狼',
     tribe: tribeAlias.get('bad'),
+    short_name: '隐',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/yl.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/yl.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/yl.png'
   },
   'langren': {
     cn_name: '狼人',
     tribe: tribeAlias.get('bad'),
+    short_name: '狼',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/langr.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/langr.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/langr.png'
   },
@@ -111,6 +140,8 @@ const indifferentMen = {
   'anlianzhe': {
     cn_name: '暗恋者',
     tribe: tribeAlias.get('3rdp'),
+    short_name: '恋',
+    short_name_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/short-name/alz.png',
     image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/alz.png',
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/alz.png'
   },

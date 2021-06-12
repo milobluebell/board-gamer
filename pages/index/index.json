@@ -1,5 +1,5 @@
 {
-  "usingComponents": {
+	"usingComponents": {
 		"nav": "/components/navigation"
 	},
 	"pageOrientation": "landscape"

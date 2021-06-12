@@ -12,6 +12,7 @@
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
+  "pageOrientation": "landscape",
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

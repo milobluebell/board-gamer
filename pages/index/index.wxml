@@ -1,19 +1,31 @@
 <!-- index.wxml -->
-<view class="wrapper">
+<view class="wrapper" style="background-image: url('https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/pick.jpg')">
   <nav />
-  <view class="container" style="margin-top: {{paddingTop}}px">
-    <view class="tribe-selector" style="margin-top: {{paddingTop}}px; ">
-      <view class="select-item primary-bg active">好人</view>
-      <view class="select-item is_red">狼人</view>
-      <view class="select-item is_black">第三方</view>
-    </view>
-    <view class="collection-picker">
-      <view class="card" wx:for="{{goodMen}}" wx:key="timeStamp" wx:for-item="item">
-        <image class="role-avatar" src="{{item.image_url}}" mode="aspectFit" style="margin-top: {{paddingTop}}px" />
+  <view class="container" style="height: {{windowHeight}}px">
+    <!-- 阵营选择 -->
+    <!-- <ul class="tribe-picker">
+      <li>好人</li>
+      <li>第三方</li>
+      <li>狼人</li>
+    </ul> -->
+    <!-- 角色选择 -->
+    <scroll-view scroll-x="true" class="role-picker clear-both">
+      <view class="card" wx:for="{{goodMen}}" wx:key="cn_name" wx:for-item="role">
+        <image class="role-avatar" src="{{role.image_url}}" mode="aspectFit" />
         <view class="role-label-wrapper">
-          <image class="role-label" src="{{item.label_url}}" mode="aspectFit"/>
+          <view class="exact-label-container primary-bg">
+            <image class="role-label-img" src="{{role.label_url}}" />
+          </view>
         </view>
       </view>
-    </view>
+    </scroll-view>
+    <!-- 显示已选角色 -->
+    <ul class="collection-displayer">
+      <li wx:for="{{goodMen}}" wx:key="short_name" wx:for-item="selectedRole" class="{{selectedRole.tribe === '00100' ? 'good' : 'bad'}}" style="margin-right: {{8}}px">
+        <image class="collection-selected-role-shortname" src="{{selectedRole.short_name_url}}" />
+      </li>
+    </ul>
+    <!-- 确认区域 -->
+    <button class="start-btn is_green right-icon">开局</button>
   </view>
 </view>
