@@ -1,10 +1,19 @@
 <!-- index.wxml -->
 <view class="wrapper">
   <nav />
-  <view class="collection-picker" style="margin-top: {{paddingTop}}px">
-    <view wx:for="{{goodMen}}" wx:key="timeStamp" wx:for-item="item">
-      <image src="{{item.image_url}}" style="width:80px;" />
-      <text class="log-item">{{index + 1}}. {{}}</text>
+  <view class="container" style="margin-top: {{paddingTop}}px">
+    <view class="tribe-selector" style="margin-top: {{paddingTop}}px; ">
+      <view class="select-item primary-bg active">好人</view>
+      <view class="select-item is_red">狼人</view>
+      <view class="select-item is_black">第三方</view>
+    </view>
+    <view class="collection-picker">
+      <view class="card" wx:for="{{goodMen}}" wx:key="timeStamp" wx:for-item="item">
+        <image class="role-avatar" src="{{item.image_url}}" mode="aspectFit" style="margin-top: {{paddingTop}}px" />
+        <view class="role-label-wrapper">
+          <image class="role-label" src="{{item.label_url}}" mode="aspectFit"/>
+        </view>
+      </view>
     </view>
   </view>
 </view>

@@ -1,24 +1,88 @@
 /**index.wxss**/
 .wrapper {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
 }
 
-.userinfo {
+.wrapper::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 26%;
+  left: 37%;
+  top: 0%;
+  /* background: linear-gradient(to bottom, #eee7a5 8%, #1e1e1e 52%); */
+  opacity: 0.12;
+  z-index: 11;
+}
+
+.container {
+  position: relative;
+}
+
+.container .tribe-selector {
+  height: 82%;
+  position: fixed;
+  left: 0;
+  top: 4%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  z-index: 1001;
+}
+
+.container .tribe-selector .select-item {
+  font-size: 26rpx;
+  font-weight: 600;
+  border-top-right-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+  padding: 10rpx;
+  display: block;
+  width: 42rpx;
+  text-align: center;
+  word-wrap: break-word;
+  height: 30%;
+  display: flex;
   align-items: center;
-  color: #aaa;
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.container .tribe-selector .select-item.active {
+  width: 56rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.collection-picker {
+  width: 82%;
+  /* background: linear-gradient(to bottom, #000000 15%, #1e1e1e 90%); */
+  border-top-right-radius: 32rpx;
+  position: relative;
+  z-index: 1000;
+  margin: 0 auto;
+}
+
+.collection-picker > .card {
+  /* background: linear-gradient(to right, #988134 40%, #d6ba5d 90%); */
+  width: 80%;
+  margin: 0 auto;
+  height: 276rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16rpx;
+  z-index: 9;
+  margin-bottom: 35rpx;
+  position: relative;
+}
+
+.card > .role-avatar {
+  height: 216%;
+}
+
+.card > .role-label-wrapper {
+  position: absolute;
+  right: 0;
+}
+
+.card > .role-label-wrapper > .role-label {
+  width: 92rpx;
 }

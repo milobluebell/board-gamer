@@ -5,6 +5,7 @@ import { vars } from './../../utils/index.js';
 Page({
   data: {
     paddingTop: getApp().globalData.navigatorBarHeight + getApp().globalData.statusBarHeight,
+    windowHeight: getApp().globalData.windowHeight,
     goodMen: [],
     badMen: [],
     thirdParty: []
@@ -13,6 +14,12 @@ Page({
   bindViewTap() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  test() {
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
     })
   },
   onLoad() {
