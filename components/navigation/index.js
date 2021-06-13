@@ -15,7 +15,17 @@ Component({
 	 * 组件的初始数据
 	 */
 	data: {
-		btnGroup: []
+		btnGroup: [{
+			iconName: 'info',
+			status: 0
+		}, {
+			iconName: 'waiting',
+			status: 1
+		}],
+		top: getApp().globalData.menuButtonBoundingClientRect.top,
+		height: getApp().globalData.menuButtonBoundingClientRect.height,
+		left: getApp().globalData.windowWidth - getApp().globalData.menuButtonBoundingClientRect.right,
+		widthPerBtn: getApp().globalData.menuButtonBoundingClientRect.width / 2,
 	},
 
 	/**
@@ -32,20 +42,8 @@ Component({
 		},
 	},
 
-	/**
-	 * 
-	 */
-	ready: function () {
-
+	attached: function () {
+		console.log(getApp().globalData, getApp().globalData.menuButtonBoundingClientRect.top, 111)
 	},
-
-	/**
-	 * 
-	 */
-	pageLifetimes: {
-
-	}
-
-
 
 })

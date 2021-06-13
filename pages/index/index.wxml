@@ -26,6 +26,8 @@
       </li>
     </ul>
     <!-- 确认区域 -->
-    <button  class="start-btn primary-bg right-icon stroke disabled">开局</button>
+    <button class="start-btn primary-bg right-icon stroke disabled" id="confirm-start" bindtap="startGame">
+      <icon class="icon-small" type="success_no_circle" size="23" color="#484848"></icon>
+    </button>
   </view>
 </view>

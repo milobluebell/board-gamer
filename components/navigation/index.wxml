@@ -1,11 +1,10 @@
 <!-- components/headerNav/headerNav.wxml -->
-<view class="headerNav-wrapper" style="height: {{navigatorBarHeight}}px;padding-top: {{statusBarHeight}}px">
-  <view class="headerNav-btnGroup">
-    <block wx:for="{{btnGroup}}" wx:key="{{index}}">
-      <button catchtap="{{item.clickEvent}}" class="nav-btn" hover-class="btn-hover">
-        <i class="iconfont icon-{{item.iconName}}"></i>
-        <text class="nav-btn-text">{{item.ch_text}}</text>
-      </button>
-    </block>
-  </view>
+<view class="nav-wrapper" style="height: {{height}}px;width: {{widthPerBtn * btnGroup.length}}px;">
+  <block wx:for="{{btnGroup}}" wx:key="{{index}}">
+    <view catchtap="{{item.clickEvent}}" class="nav-btn" hover-class="btn-hover">
+      <view class="nav-btn-content">
+        <icon class="icon-box-img" type="{{item.iconName}}" size="20" color="{{item.status === 1 ? '#a30b0b' : 'black'}}"></icon>
+      </view>
+    </view>
+  </block>
 </view>

@@ -1,7 +1,8 @@
 // nothing but good to look
 // index.js 工具函数
-const { $http } = require('./$http');
-const vars = require('./vars');
+import { $http } from './$http';
+import vars from './vars';
+import * as models from './models/index.js';
 
 // 牌数是否符合预期
 function checkCardCountValid($num) {
@@ -32,16 +33,17 @@ function calcResult($goodMen, $badMen, $opt = {}) {
 }
 
 //
-function checkTribeLabelAlias (code) {
+function checkTribeLabelAlias(code) {
 
 }
 
-module.exports = {
+export default {
   checkCardCountValid,
   checkCollectionValid,
   calcForce,
   dialogueGenerator,
   calcResult,
   $http,
-  vars
+  vars,
+  models
 }

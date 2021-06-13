@@ -1,6 +1,6 @@
 // index.js
 // 获取应用实例
-import { vars } from './../../utils/index.js';
+import utils from './../../utils/index.js';
 
 Page({
   data: {
@@ -11,24 +11,20 @@ Page({
     badMen: [],
     thirdParty: []
   },
-  // 事件处理函数
-  bindViewTap() {
+  onLoad() {
+    const { vars } = utils;
+    this.setData({
+      goodMen: Object.values(vars.roles.goodMen),
+      badMen: Object.values(vars.roles.badMen),
+      thirdParty: Object.values(vars.roles.indifferentMen)
+    })
+  },
+  // 开始一场游戏
+  startGame() {
+    // 启动游戏
+    const game = new models.Game([], {});
     wx.navigateTo({
       url: '../logs/logs'
-    })
-  },
-  test() {
-    wx.showToast({
-      title: '成功',
-      icon: 'success',
-    })
-  },
-  onLoad() {
-    const { roles } = vars;
-    this.setData({
-      goodMen: Object.values(roles.goodMen),
-      badMen: Object.values(roles.badMen),
-      thirdParty: Object.values(roles.indifferentMen)
     })
   },
 })

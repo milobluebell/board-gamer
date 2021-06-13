@@ -45,6 +45,8 @@ App({
       // 是否已经登陆
       isLogin: false,
 
+      // 胶囊信息
+      menuButtonBoundingClientRect: wx.getMenuButtonBoundingClientRect()
     }
 
     //

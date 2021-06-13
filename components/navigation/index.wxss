@@ -1,27 +1,31 @@
 /* components/headerNav/headerNav.wxss */
-.headerNav-wrapper {
+.nav-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 20rpx;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 101;
-  width: 100%;
+  top: 8rpx;
+  left: 24rpx;
+  z-index: 1002;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 56rpx;
 }
 
-.headerNav-btnGroup {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
 .nav-btn {
-  padding: 0 6rpx;
-  margin-right: 32rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
-.nav-btn-text {
-  color: white;
-  font-size: 30rpx;
-  margin-left: 6rpx;
+
+.nav-btn-content {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.nav-btn-content:first-child {
+  border-right: solid 1rpx rgba(0, 0, 0, 0.1);
 }
