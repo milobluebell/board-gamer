@@ -1,0 +1,18 @@
+.wrapper .container {
+  /* z-index: 1002; */
+}
+
+.wrapper .container .next-stage-btn {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 0;
+  border-top-left-radius: 50%;
+  z-index: 1003;
+}
+
+.wrapper .container .next-stage-btn icon {
+  transform: rotate(270deg);
+}

@@ -18,10 +18,12 @@ Component({
 		btnGroup: [{
 			iconName: 'info',
 			status: 0
-		}, {
+		},
+		{
 			iconName: 'waiting',
 			status: 1
-		}],
+		}
+		],
 		top: getApp().globalData.menuButtonBoundingClientRect.top,
 		height: getApp().globalData.menuButtonBoundingClientRect.height,
 		left: getApp().globalData.windowWidth - getApp().globalData.menuButtonBoundingClientRect.right,
@@ -43,7 +45,6 @@ Component({
 	},
 
 	attached: function () {
-		console.log(getApp().globalData, getApp().globalData.menuButtonBoundingClientRect.top, 111)
 	},
 
 })

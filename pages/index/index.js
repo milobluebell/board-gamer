@@ -21,10 +21,11 @@ Page({
   },
   // 开始一场游戏
   startGame() {
+    const { models } = utils;
     // 启动游戏
-    const game = new models.Game([], {});
+    const game = new models.Game([1, 2, 3, 4, 14, 14, 14, 14], {});
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../teleprompter/index'
     })
   },
 })

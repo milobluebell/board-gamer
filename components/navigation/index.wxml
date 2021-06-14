@@ -1,8 +1,8 @@
-<!-- components/headerNav/headerNav.wxml -->
-<view class="nav-wrapper" style="height: {{height}}px;width: {{widthPerBtn * btnGroup.length}}px;">
+<!-- components/navigation/navigation.wxml -->
+<view class="nav-wrapper" style="height: {{height}}px;width: {{btnGroup.length === 1 ? height : widthPerBtn * btnGroup.length}}px;border-radius: {{btnGroup.length === 1 ? height + 'px' : '56rpx'}}">
   <block wx:for="{{btnGroup}}" wx:key="{{index}}">
     <view catchtap="{{item.clickEvent}}" class="nav-btn" hover-class="btn-hover">
-      <view class="nav-btn-content">
+      <view class="nav-btn-content" style="border-right: {{(btnGroup.length > 1 && index === 0) ? 'solid 0.5rpx #827e7f' : 'none'}};">
         <icon class="icon-box-img" type="{{item.iconName}}" size="20" color="{{item.status === 1 ? '#a30b0b' : 'black'}}"></icon>
       </view>
     </view>

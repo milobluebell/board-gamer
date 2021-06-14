@@ -17,6 +17,7 @@ function Role(tribe,) {
 // 好人阵营
 const goodMen = {
   'nvwu': {
+    code: 1,
     cn_name: '女巫',
     tribe: tribeAlias.get('good'),
     short_name: '女',
@@ -25,6 +26,7 @@ const goodMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/nw.png'
   },
   'baichi': {
+    code: 2,
     cn_name: '白痴',
     tribe: tribeAlias.get('good'),
     short_name: '白',
@@ -33,6 +35,7 @@ const goodMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/bc.png'
   },
   'lieren': {
+    code: 3,
     cn_name: '猎人',
     tribe: tribeAlias.get('good'),
     short_name: '猎',
@@ -41,6 +44,7 @@ const goodMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/lr.png'
   },
   'moshushi': {
+    code: 4,
     cn_name: '魔术师',
     tribe: tribeAlias.get('good'),
     short_name: '术',
@@ -49,6 +53,7 @@ const goodMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/mss.png'
   },
   'pingmin': {
+    code: 5,
     cn_name: '平民',
     tribe: tribeAlias.get('good'),
     short_name: '民',
@@ -57,6 +62,7 @@ const goodMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/pm.png'
   },
   'qishi': {
+    code: 6,
     cn_name: '骑士',
     tribe: tribeAlias.get('good'),
     short_name: '骑',
@@ -65,6 +71,7 @@ const goodMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/qs.png'
   },
   'shemengzhe': {
+    code: 7,
     cn_name: '摄梦人',
     tribe: tribeAlias.get('good'),
     short_name: '梦',
@@ -73,6 +80,7 @@ const goodMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/smr.png'
   },
   'shouwei': {
+    code: 8,
     cn_name: '守卫',
     tribe: tribeAlias.get('good'),
     short_name: '守',
@@ -81,6 +89,7 @@ const goodMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/sw.png'
   },
   'yuyanjia': {
+    code: 9,
     cn_name: '预言家',
     tribe: tribeAlias.get('good'),
     short_name: '预',
@@ -93,6 +102,7 @@ const goodMen = {
 // 坏人阵营
 const badMen = {
   'bailangwang': {
+    code: 10,
     cn_name: '白狼王',
     cn_name: '白狼王',
     tribe: tribeAlias.get('bad'),
@@ -102,6 +112,7 @@ const badMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/blw.png'
   },
   'langmeiren': {
+    code: 11,
     cn_name: '狼美人',
     tribe: tribeAlias.get('bad'),
     short_name: '狼美',
@@ -110,6 +121,7 @@ const badMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/lmr.png'
   },
   'langwang': {
+    code: 12,
     cn_name: '狼王',
     tribe: tribeAlias.get('bad'),
     short_name: '狼王',
@@ -118,6 +130,7 @@ const badMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/lw.png'
   },
   'yinlang': {
+    code: 13,
     cn_name: '隐狼',
     tribe: tribeAlias.get('bad'),
     short_name: '隐',
@@ -126,6 +139,7 @@ const badMen = {
     label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/yl.png'
   },
   'langren': {
+    code: 14,
     cn_name: '狼人',
     tribe: tribeAlias.get('bad'),
     short_name: '狼',
@@ -138,6 +152,7 @@ const badMen = {
 // 第三方
 const indifferentMen = {
   'anlianzhe': {
+    code: 14,
     cn_name: '暗恋者',
     tribe: tribeAlias.get('3rdp'),
     short_name: '恋',
@@ -148,13 +163,14 @@ const indifferentMen = {
 }
 
 const cop = {
+  code: 0,
   cn_name: '警徽',
   tribe: tribeAlias.get('items'),
   image_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/jz.png',
   label_url: 'https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/label/text/jz.png'
 }
 
-module.exports = {
+export default {
   roles: {
     goodMen,
     badMen,

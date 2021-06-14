@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "curtain": "/components/curtain",
+		"nav": "/components/navigation"
+  },
+  "pageOrientation": "landscape"
+}

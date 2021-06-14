@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/teleprompter/index"
   ],
   "window": {
     "backgroundColorBottom": "#000000",

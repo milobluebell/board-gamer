@@ -1,0 +1,12 @@
+<!-- logs.wxml -->
+<view class="wrapper" style="background-image: url('https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/pick.jpg')">
+  <view class="container" style="height: {{windowHeight}}px">
+    <button class="next-stage-btn primary-bg">
+      <icon class="icon-small" type="download" size="32" color="#755a00"></icon>
+    </button>
+  </view>
+  <!-- 幕布 -->
+  <curtain />
+  <!-- 导航栏 -->
+  <nav />
+</view>

@@ -28,7 +28,7 @@ page {
   height: 100%;
   content: "";
   background: linear-gradient(to top, #141414 5%, #000000 75%);
-  opacity: 0.91;
+  opacity: 0.88;
 }
 
 .wrapper > .container {

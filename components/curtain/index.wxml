@@ -1,0 +1,42 @@
+<!-- components/curtain.wxml -->
+<view class="curtain-wrapper">
+  <scroll-view class="curtain-marquee" scroll-into-view="a3" scroll-x="{{true}}" scroll-with-animation="{{true}}" enable-back-to-top="{{false}}" scroll-anchoring="{{true}}" show-scrollbar="{{false}}">
+    <view class="container">
+      <view class="anchor" id="a1" />
+      <h4 class="stage-name">{{chapter.stageName}}</h4>
+      <view class="divider" />
+      <text class="stage-dialogue">{{chapter.dialogue}}</text>
+    </view>
+    <view class="container">
+      <view class="anchor" id="a2" />
+      <h4 class="stage-name">{{chapter.stageName}}</h4>
+      <view class="divider" />
+      <text class="stage-dialogue">{{chapter.dialogue}}</text>
+    </view>
+    <view class="container">
+      <view class="anchor" id="a3" />
+      <h4 class="stage-name">{{chapter.stageName}}</h4>
+      <view class="divider" />
+      <text class="stage-dialogue">{{chapter.dialogue}}</text>
+    </view>
+    <view class="container">
+      <view class="anchor" id="a4" />
+      <h4 class="stage-name">{{chapter.stageName}}</h4>
+      <view class="divider" />
+      <text class="stage-dialogue">{{chapter.dialogue}}</text>
+    </view>
+    <view class="container">
+      <view class="anchor" id="a5" />
+      <h4 class="stage-name">{{chapter.stageName}}</h4>
+      <view class="divider" />
+      <text class="stage-dialogue">{{chapter.dialogue}}</text>
+    </view>
+    <view class="container">
+      <view class="anchor" id="a6" />
+      <h4 class="stage-name">{{chapter.stageName}}</h4>
+      <view class="divider" />
+      <text class="stage-dialogue">{{chapter.dialogue}}</text>
+    </view>
+  </scroll-view>
+  <view class="ticker"></view>
+</view>

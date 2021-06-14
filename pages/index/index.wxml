@@ -1,6 +1,5 @@
 <!-- index.wxml -->
 <view class="wrapper" style="background-image: url('https://public-bucket-1252070958.cos.ap-guangzhou.myqcloud.com/board-gamer/pick.jpg')">
-  <nav />
   <view class="container" style="height: {{windowHeight}}px">
     <!-- 阵营选择 -->
     <view class="tribe-picker">
@@ -9,7 +8,7 @@
       <view class="primary-bg tribe-picker-item stroke active">好人</view>
     </view>
     <!-- 角色选择 -->
-    <scroll-view scroll-x="true" class="role-picker clear-both">
+    <scroll-view scroll-x="true" class="role-picker clear-both" show-scrollbar="{{false}}">
       <view class="card" wx:for="{{goodMen}}" wx:key="cn_name" wx:for-item="role">
         <image class="role-avatar" src="{{role.image_url}}" mode="aspectFit" />
         <view class="role-label-wrapper">

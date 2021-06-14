@@ -1,0 +1,24 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "提词器",
+          "pathName": "pages/teleprompter/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -7,8 +7,7 @@
   top: 8rpx;
   left: 24rpx;
   z-index: 1002;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 56rpx;
+  background-color: #9b9798;
 }
 
 .nav-btn {
@@ -19,13 +18,14 @@
   flex: 1;
 }
 
+.nav-btn.active {
+  background-color: #555152;
+}
+
 .nav-btn-content {
   height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
-}
-.nav-btn-content:first-child {
-  border-right: solid 1rpx rgba(0, 0, 0, 0.1);
 }
