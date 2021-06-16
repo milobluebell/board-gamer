@@ -16,7 +16,7 @@ export const dramas = {
     dialogue: '欢迎来到狗镇',
     background: ''
   }],
-  schizomania: [{
+  schizomaniaMan: [{
     dialogue: '一会儿叫我小丑',
     background: ''
   }]
