@@ -132,14 +132,15 @@ class Teleprompter {
 
     // 第二天白天
 
-
     // 最正常的顺序
     const result = [
       ...prefaces,
       ...actionInNight,
-      ...actionResultInNight,
+      ...postfaces
     ];
 
+    this.prompters = result;
+    return result;
   }
 
 }

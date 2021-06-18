@@ -29,6 +29,12 @@ Component({
     const drama = new models.Drama();
     this.setData({
       chapter: drama.readCurrentChapter()
-    })
+    });
+
+    // 启动提词器
+    const prompter = new models.Teleprompter();
+    prompter.generatePrompters();
+    const prompterCards = prompter.prompters;
+    console.log(prompter, prompterCards, 123);
   }
 })

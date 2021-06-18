@@ -1,7 +1,7 @@
 <!-- components/curtain.wxml -->
 <view class="curtain-wrapper">
-  <scroll-view class="curtain-marquee" scroll-into-view="a3" scroll-x="{{true}}" scroll-with-animation="{{true}}" enable-back-to-top="{{false}}" scroll-anchoring="{{true}}" show-scrollbar="{{false}}">
-    <view class="container">
+  <scroll-view class="curtain-marquee" scroll-into-view="a1" scroll-x="{{true}}" scroll-with-animation="{{true}}" enable-back-to-top="{{false}}" scroll-anchoring="{{true}}" show-scrollbar="{{false}}">
+    <view class="container" wx:for="{{}}" wx:key="index">
       <view class="anchor" id="a1" />
       <h4 class="stage-name">{{chapter.stageName}}</h4>
       <view class="divider" />
